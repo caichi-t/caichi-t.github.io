@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #151515 url('../images/1711162AMEMAN014.jpg') no-repeat fixed left bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Slabo 27px', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+a:link, a:active, a:checked, a:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* header */
+
+.header {
+  padding: 170px 30px 80px;
+}
+
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+  background: linear-gradient(to right, rgba(90, 122, 155, 0.3) 0%, rgba(213, 75, 49, 0.3) 100%);
+  border-radius: 3px;
+  display: inline-block;
+  color: #eee;
+}
+
+.site-title-sub::before,
+.site-title-sub::after {
+  content: '';
+  display: inline-block;
+  width: 140px;
+  height: 2px;
+  margin: 0 30px;
+  background-color: #eee;
+  vertical-align: middle;
+}
+
+.site-title {
+  margin: 50px 0 40px;
+  font-size: 6rem;
+  letter-spacing: 2px;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  padding: 5px 30px;
+  color: #eee;
+  font-size: 1.6rem;
+  background: linear-gradient(to right, rgba(90, 122, 155, 0.3) 0%, rgba(213, 75, 49, 0.3) 100%);
+  display: inline-block;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background: rgba(175, 165, 142, 0.3);
+  border: 1px solid #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button-showy {
+  border: 1px solid #f1b400;
+  background: rgba(241, 180, 0, 0.3);
+}
+
+.buttons .button {
+  margin: 10px;
+}
+
+/* about */
+
+.about {
+  padding: 80px 30px;
+  background: rgba(255, 255, 255, 0.93);
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.me {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.face-img {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.heading {
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 30px auto 10px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+  border-bottom: solid 4px rgb(213, 75, 49);
+  border-radius: 0px 0px 160px 180px/0px 0px 20px 4px;
+}
+
+.languages {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.la-btn {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  color: black;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin:10px 5px 0;
+}
+
+.la-btn:hover {
+  opacity: 0.7;
+}
+
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+  font-size: 1.5rem;
+}
+
+.ja {
+  margin-top: 40px;
+}
+
+.en {
+  display: none;
+  margin-top: 40px;
+  font-size: 1.7rem;
+}
+
+/* works */
+
+.works {
+  background: #383634;
+  background: rgba(56, 54, 52, 0.93);
+  padding: 80px 0;
+}
+
+.load {
+  margin: 70px 0 0 0;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+/* skills */
+
+.skills {
+  padding: 80px 0;
+  background: rgba(255, 255, 255, 0.93);
+  color: #333;
+}
+
+.skills-wrapper {
+  width: 80%;
+  margin: 50px auto 0;
+}
+
+.skills-wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.skill-box {
+  float: left;
+  padding: 8px;
+  margin: 8px;
+  border: outset 3px rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  background-color: #fff;
+  opacity: 0;
+  height: 263px;
+}
+
+.skill-icon {
+  margin-bottom: 30px;
+  font-size: 13rem;
+}
+
+.html {
+  color: #e64b24;
+}
+
+.css {
+  color: #224cdf;
+}
+
+.js {
+  color: #ffd84b;
+}
+
+.php {
+  font-size: 12rem;
+  color: #777cb3;
+}
+
+.wp {
+  color: #136787;
+}
+
+.git {
+  color: #f45034;
+}
+
+.bs {
+  color: #573e7a;
+}
+
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* contact */
+
+.contact {
+  padding: 80px 0 90px;
+}
+
+.contact-form {
+  width:50%;
+  margin: 50px auto 0;
+}
+
+/* footer */
+
+.footer {
+ padding: 12px 0;
+ font-size: 1.3rem;
+}
+
+.dm {
+  display: inline-block;
+  margin-top: 50px;
+  position: relative;
+}
+
+.dm:hover {
+  opacity: 0.8;
+}
+
+.twitter {
+  color: #00a1ef;
+  font-size: 10rem;
+}
+
+.ms {
+  color: #00a1ef;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.tap {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+}
+
+/* the others */
+
+.top-btn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 1px;
+  color: #afa58d;
+  border: 1px solid #afa58d;
+}
+
+.top-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.arrow {
+  font-size: 3rem;
+}
+
+.top-ms {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .site-title-sub::before,
+  .site-title-sub::after {
+    display: block;
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .site-title-sub {
+    font-size: 1.7rem;
+    padding: 0 20px;
+  }
+
+  .site-title {
+    margin-top: 35px;
+    font-size: 5rem;
+  }
+
+  .header {
+    padding-top: 60px;
+  }
+
+
+  .button:hover {
+    opacity: 1;
+  }
+
+  .heading {
+    font-size: 2.0rem;
+    width: 200px;
+  }
+
+  .body {
+    font-size: 1.3rem;
+  }
+
+  .about-text {
+    line-height: 1.8;
+    margin: 10px 0 10px;
+  }
+
+  .ja, .en {
+    margin-top: 0;
+  }
+
+  .me {
+    width: 100%;
+  }
+
+  .face-img {
+    position: static;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+  }
+
+  .languages {
+    position: static;
+  }
+
+  .skills-wrapper,
+  .skill-box {
+    display: block;
+  }
+
+
+  .skill-box {
+    margin: 3px;
+    height: 74px;
+  }
+
+  .skill-icon {
+    height: 30px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .skill-title {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+
+  .arrow {
+    font-size: 2rem;
+  }
+
+  .top-ms {
+    font-size: 0.8rem;
+  }
+}
