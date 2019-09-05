@@ -202,7 +202,7 @@ button:focus {
 }
 
 .skill-box {
-  float: left;
+  display: inline-block;
   padding: 8px;
   margin: 8px;
   border: outset 3px rgba(255, 255, 255, 0.7);
@@ -210,11 +210,13 @@ button:focus {
   background-color: #fff;
   opacity: 0;
   height: 263px;
+  width: 263px;
 }
 
 .skill-icon {
-  margin-bottom: 30px;
+  margin:0 auto 30px;
   font-size: 13rem;
+  display: block;
 }
 
 .html {
@@ -230,7 +232,6 @@ button:focus {
 }
 
 .php {
-  font-size: 12rem;
   color: #777cb3;
 }
 
@@ -389,8 +390,7 @@ button:focus {
     position: static;
   }
 
-  .skills-wrapper,
-  .skill-box {
+  .skills-wrapper {
     display: block;
   }
 
@@ -398,6 +398,7 @@ button:focus {
   .skill-box {
     margin: 3px;
     height: 74px;
+    width: 74px;
   }
 
   .skill-icon {
