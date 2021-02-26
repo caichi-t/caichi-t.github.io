@@ -57,6 +57,7 @@ p {
 
 .main__modelviewer--half {
     width: 50%;
+    --ar-button-display: none;
 }
 
 .main__textBox {
@@ -117,6 +118,8 @@ p {
     background-color: inherit;
     padding: 0 0 0 20px;
     border: 0;
+    width: 100%;
+    text-align: left;
 }
 
 .main__watchText {
@@ -131,6 +134,7 @@ p {
 
 .main__annotation {
     color: #666;
+    font-size: 1.2rem;
 }
 
 .footer {
