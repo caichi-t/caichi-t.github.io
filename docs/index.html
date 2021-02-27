@@ -20,7 +20,7 @@
     <div class="main">
         <div class="main__modelBox">
             <model-viewer src="./assets/child_3.glb" ios-src="./assets/child_3.usdz" camera-controls ar
-                environment-image="neutral" class="main__model main__modelviewer"></model-viewer>
+                environment-image="neutral" class="main__model main__modelviewer" id="ARmodel"></model-viewer>
         </div>
         <div class="main__modelBox">
             <div class="main__model">
@@ -31,8 +31,8 @@
         <div class="main__modelBox main__modelBox--separate">
             <div class="main__textBox">
                 <span class="main__textBoxText">実物大のフィギュアを見る</span>
-                <button class="main__textBoxBtn"><img src="./assets/ar_icon_2.png" class="main__arIcon2"><span
-                        class="main__textBoxBtnText">3D表示</span></button>
+                <button class="main__textBoxBtn activateAR"><img src="./assets/ar_icon_2.png"
+                        class="main__arIcon2"><span class="main__textBoxBtnText">3D表示</span></button>
             </div>
             <model-viewer src="./assets/child_3.glb" ios-src="./assets/child_3.usdz" camera-controls ar
                 environment-image="neutral" class="main__model main__modelviewer main__modelviewer--half">
@@ -43,15 +43,21 @@
                 <img src="./assets/model_img.png" class="main__modelImg">
             </div>
             <button class="main__btn"><img src="./assets/ar_icon_3.png" class="main__arIcon3"><span
-                    class="main__watchText">ARで見る</span></button>
+                    class="main__watchText activateAR">ARで見る</span></button>
         </div>
         <div class="main__annotationBox">
-            <p class="main__annotation">※お客様のご要望に沿って様々な表示が出来ますのでご気軽にご相談下さい。</p>
+            <p class="main__annotation">※お客様のご要望に沿って様々な表示が出来ますのでお気軽にご相談下さい。</p>
             <p class="main__annotation">※一部AR表示に対応していない機種がございます。あらかじめご了承ください。</p>
         </div>
     </div>
     <footer class="footer">
         <p class="footer__text">copyright © 2021 Kazuma Tsuchiya All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementsByClassName('activateAR').addEventListener('click', () => {
+            const modelViewer = document.getElementById('ARmodel');
+            modelViewer.activateAR();
+        });
+    </script>
 </body>
 </html>
